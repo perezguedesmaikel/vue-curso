@@ -1,6 +1,7 @@
 <script lang="js" setup>
 
 import ContainerPost from "@/components/posts/ContainerPost.vue";
+import MenuNavBar from "@/components/navbar/MenuNavBar.vue";
 </script>
 
 <template>
@@ -16,12 +17,9 @@ import ContainerPost from "@/components/posts/ContainerPost.vue";
           ></v-img>
         </template>
 
-        <template v-slot:prepend>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        </template>
 
         <v-app-bar-title>My VUE Application!!!</v-app-bar-title>
-
+        <MenuNavBar/>
         <v-spacer></v-spacer>
 
         <v-btn icon>
