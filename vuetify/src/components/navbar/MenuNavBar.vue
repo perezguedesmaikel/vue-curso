@@ -10,7 +10,9 @@
             :key="index"
             :value="index"
         >
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-title>
+            <router-link :to="item.url" class="text-green-accent-4 text-decoration-none">{{ item.title }}</router-link>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -20,10 +22,10 @@
 export default {
   data: () => ({
     items: [
-      {title: 'Home'},
-      {title: 'Calculadora'},
-      {title: 'Post'},
-      {title: 'Contador'},
+      {title: 'Home', url: '/'},
+      {title: 'Calculadora', url: '/calculadora'},
+      {title: 'Post', url: '/post'},
+      {title: 'Contador', url: '/contador'},
     ],
   }),
 }
