@@ -20,10 +20,10 @@
 export default {
   data: () => ({
     items: [
-      {title: 'Click Me'},
-      {title: 'Click Me'},
-      {title: 'Click Me'},
-      {title: 'Click Me 2'},
+      {title: 'Home'},
+      {title: 'Calculadora'},
+      {title: 'Post'},
+      {title: 'Contador'},
     ],
   }),
 }
