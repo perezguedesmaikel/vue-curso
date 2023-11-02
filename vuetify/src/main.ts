@@ -15,14 +15,18 @@ import {registerPlugins} from '@/plugins'
 import ContainerPost from "@/components/posts/ContainerPost.vue";
 import CalculadoraMini from "@/components/CalculadoraMini.vue";
 import {createRouter, createWebHashHistory} from "vue-router";
+import CountComponent from "@/components/camparation/CountComponent.vue";
+import Home from "@/components/Home/Home.vue";
 
 
 const app = createApp(App)
 
 registerPlugins(app)
 const routes = [
-    {path: '/', component: ContainerPost},
+    {path: '/', component: Home},
     {path: '/calculadora', component: CalculadoraMini},
+    {path: '/post', component: ContainerPost},
+    {path: '/contador', component: CountComponent},
 ]
 const router = createRouter({
     history: createWebHashHistory(),

@@ -5,7 +5,7 @@ import MenuNavBar from "@/components/navbar/MenuNavBar.vue";
 </script>
 
 <template>
-  <v-card class="mx-auto" color="grey-lighten-3" max-width="448">
+  <v-card class="mx-auto" color="grey-lighten-3" max-width="90%">
     <v-layout>
       <v-app-bar
           color="teal-darken-4"
@@ -37,8 +37,6 @@ import MenuNavBar from "@/components/navbar/MenuNavBar.vue";
 
       <v-main>
         <v-container fluid>
-          <router-link to="/">Go to Home</router-link>
-          <router-link to="/calculadora">Calculadora</router-link>
           <router-view/>
         </v-container>
       </v-main>

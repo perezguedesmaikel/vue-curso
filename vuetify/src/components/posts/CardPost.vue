@@ -1,11 +1,11 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import ButtonPost from "./ButtonPost.vue";
 import CountComponent from "@/components/camparation/CountComponent.vue";
 import CalculadoraMini from "@/components/CalculadoraMini.vue";
 </script>
 
 <template>
-  <v-container fluid fill-height>
+  <v-container fill-height fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" sm="6">
         <v-card>
@@ -21,8 +21,6 @@ import CalculadoraMini from "@/components/CalculadoraMini.vue";
             aliquam metus tellus vitae lectus. Aliquam vitae lacus at turpis consectetur fermentum. Etiam consectetur
             risus sed bibendum imperdiet.
           </v-card-text>
-          <CountComponent/>
-          <calculadora-mini/>
           <v-card-actions class="justify-end">
             <ButtonPost/>
           </v-card-actions>
