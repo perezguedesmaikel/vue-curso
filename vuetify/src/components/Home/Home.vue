@@ -13,11 +13,11 @@
             y los elementos según tus necesidades.
           </v-card-text>
           <v-card-actions>
-            <v-btn color="primary" text to="/about">
+            <v-btn color="primary" to="/about">
               Leer más
             </v-btn>
             <v-spacer></v-spacer>
-            <v-btn color="secondary" text to="/contact">
+            <v-btn color="secondary" to="/contact">
               Contáctanos
             </v-btn>
           </v-card-actions>
@@ -27,10 +27,8 @@
   </v-container>
 </template>
 
-<script>
-export default {
-  name: 'HomePage',
-};
+<script setup>
+
 </script>
 
 <style scoped>

@@ -24,43 +24,31 @@
   </v-app>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script setup>
+import {ref} from 'vue';
 
-export default {
-  name: 'Calculator',
-  setup() {
-    const display = ref('');
-    const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-    const operators = ['+', '-', '*', '/'];
 
-    const appendDigit = (digit) => {
-      display.value += digit.toString();
-    };
+const display = ref('');
+const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const operators = ['+', '-', '*', '/'];
 
-    const appendOperator = (operator) => {
-      display.value += operator;
-    };
-
-    const clear = () => {
-      display.value = '';
-    };
-
-    const calculate = () => {
-      display.value = eval(display.value);
-    };
-
-    return {
-      display,
-      digits,
-      operators,
-      appendDigit,
-      appendOperator,
-      clear,
-      calculate
-    };
-  }
+const appendDigit = (digit) => {
+  display.value += digit.toString();
 };
+
+const appendOperator = (operator) => {
+  display.value += operator;
+};
+
+const clear = () => {
+  display.value = '';
+};
+
+const calculate = () => {
+  display.value = eval(display.value);
+};
+
+
 </script>
 
 <style>

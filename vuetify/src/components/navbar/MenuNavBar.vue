@@ -16,15 +16,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    items: [
-      {title: 'Home', url: '/'},
-      {title: 'Calculadora', url: '/calculadora'},
-      {title: 'Post', url: '/post'},
-      {title: 'Contador', url: '/contador'},
-    ],
-  }),
-};
+<script setup>
+const items = [
+  {title: 'Home', url: '/'},
+  {title: 'Calculadora', url: '/calculadora'},
+  {title: 'Post', url: '/post'},
+  {title: 'Contador', url: '/contador'},
+  {title: 'Condiciones', url: '/condiciones'},
+  {title: 'Listar', url: '/lista'},
+];
 </script>

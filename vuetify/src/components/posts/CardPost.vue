@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import ButtonPost from "./ButtonPost.vue";
-import CountComponent from "@/components/camparation/CountComponent.vue";
+import CountComponent from "@/components/comparation/CountComponent.vue";
 import CalculadoraMini from "@/components/CalculadoraMini.vue";
 </script>
 
