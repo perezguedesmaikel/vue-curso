@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <v-card class="bg-amber custom-height ">Nieto</v-card>
+  <v-card class="bg-amber custom-height d-flex justify-center align-center">Nieto</v-card>
 </template>
 
 <style scoped>
