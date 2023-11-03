@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <v-card class="bg-amber custom-height d-flex justify-center align-center">Nieto</v-card>
+  <v-card class="bg-amber  d-flex justify-center align-center custom-height-child">Nieto</v-card>
 </template>
 
 <style scoped>
-.custom-height {
-  height: 200px;
-  width: 200px;
+.custom-height-child {
+  height: 50px;
+  width: 50px;
 }
 </style>
