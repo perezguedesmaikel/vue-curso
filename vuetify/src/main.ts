@@ -22,25 +22,27 @@ import ContainerListar from "@/components/ListarCard/ContainerListar.vue";
 import MyFirstForm from "@/components/forms/MyFirstForm.vue";
 import CicleLife from "@/components/CicleLife/CicleLife.vue";
 import Father from "@/components/comunicationVertical/Father.vue";
+import DirectivasPersonalizadas from "@/components/directivas/DirectivasPersonalizadas.vue";
 
 
 const app = createApp(App)
 
 registerPlugins(app)
 const routes = [
-  {path: '/', component: Home},
-  {path: '/calculadora', component: CalculadoraMini},
-  {path: '/post', component: ContainerPost},
-  {path: '/contador', component: CountComponent},
-  {path: '/condiciones', component: OldYoung},
-  {path: '/lista', component: ContainerListar},
-  {path: '/form', component: MyFirstForm},
-  {path: '/cicle-life', component: CicleLife},
-  {path: '/vertical-communication', component: Father},
+    {path: '/', component: Home},
+    {path: '/calculadora', component: CalculadoraMini},
+    {path: '/post', component: ContainerPost},
+    {path: '/contador', component: CountComponent},
+    {path: '/condiciones', component: OldYoung},
+    {path: '/lista', component: ContainerListar},
+    {path: '/form', component: MyFirstForm},
+    {path: '/cicle-life', component: CicleLife},
+    {path: '/vertical-communication', component: Father},
+    {path: '/directivas', component: DirectivasPersonalizadas},
 ]
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
+    history: createWebHashHistory(),
+    routes,
 });
 // const app = Vue.createApp({})
 // // Make sure to _use_ the router instance to make the

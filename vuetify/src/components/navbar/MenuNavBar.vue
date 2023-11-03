@@ -27,5 +27,6 @@ const items = [
   {title: 'Form', url: '/form'},
   {title: 'Cicle-life', url: '/cicle-life'},
   {title: 'Vertical-Communication', url: '/vertical-communication'},
+  {title: 'Directivas personalizadas', url: '/directivas'},
 ];
 </script>
