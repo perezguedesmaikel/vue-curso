@@ -1,20 +1,9 @@
-<script lang="ts">
-import {defineComponent} from "vue";
-import {emptyStatement} from "@babel/types";
+<script lang="ts" setup>
 
-export default defineComponent({
-  name: 'ChildSon',
-  methods: {emptyStatement},
-  props: {
-    name: String,
-    age: Number
-  },
-  emits: ['hello'],
-  setup(props) {
-    return props
-  }
-});
-
+defineEmits(
+    ['hello']
+);
+defineProps({name: String, age: Number});
 
 </script>
 
