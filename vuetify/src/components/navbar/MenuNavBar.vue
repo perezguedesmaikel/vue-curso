@@ -24,5 +24,8 @@ const items = [
   {title: 'Contador', url: '/contador'},
   {title: 'Condiciones', url: '/condiciones'},
   {title: 'Listar', url: '/lista'},
+  {title: 'Form', url: '/form'},
+  {title: 'Cicle-life', url: '/cicle-life'},
+  {title: 'Vertical-Communication', url: '/vertical-communication'},
 ];
 </script>

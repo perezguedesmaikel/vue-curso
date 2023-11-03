@@ -19,6 +19,9 @@ import CountComponent from "@/components/comparation/CountComponent.vue";
 import Home from "@/components/Home/Home.vue";
 import OldYoung from "@/components/OldYoung/OldYoung.vue";
 import ContainerListar from "@/components/ListarCard/ContainerListar.vue";
+import MyFirstForm from "@/components/forms/MyFirstForm.vue";
+import CicleLife from "@/components/CicleLife/CicleLife.vue";
+import Father from "@/components/comunicationVertical/Father.vue";
 
 
 const app = createApp(App)
@@ -31,6 +34,9 @@ const routes = [
   {path: '/contador', component: CountComponent},
   {path: '/condiciones', component: OldYoung},
   {path: '/lista', component: ContainerListar},
+  {path: '/form', component: MyFirstForm},
+  {path: '/cicle-life', component: CicleLife},
+  {path: '/vertical-communication', component: Father},
 ]
 const router = createRouter({
   history: createWebHashHistory(),
