@@ -32,6 +32,7 @@ const items = [
   {title: 'Login', url: '/login'},
   {title: 'Contador Global', url: '/global'},
   {title: 'Componentes Dinámicos', url: '/dynamic'},
+  {title: 'Transiciones de componentes', url: '/transaction'},
 
 ];
 </script>
