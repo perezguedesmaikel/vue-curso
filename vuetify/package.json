@@ -12,6 +12,7 @@
     "@mdi/font": "7.0.96",
     "core-js": "^3.29.0",
     "firebase": "^10.5.2",
+    "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.1.7",
     "roboto-fontface": "*",
     "vue": "^3.2.0",

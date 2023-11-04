@@ -30,7 +30,10 @@ import store from "@/components/store/store";
 import ContadorGlobal from "@/components/contadorGlobal/ContadorGlobal.vue";
 import {createPinia} from "pinia";
 import DinamicComponent from "@/components/dinamicComponent/DinamicComponent.vue";
+import {OhVueIcon, addIcons} from "oh-vue-icons";
+import {FaFlag, RiZhihuFill} from "oh-vue-icons/icons";
 
+addIcons(FaFlag, RiZhihuFill);
 const firebaseConfig = {
     apiKey: "AIzaSyAeD6Pevuygz7QJrLEm_W4EFrhBPcF4rTs",
     authDomain: "curso-vue-d39ea.firebaseapp.com",
@@ -39,6 +42,8 @@ const firebaseConfig = {
     messagingSenderId: "134067368717",
     appId: "1:134067368717:web:6dd2c74e7ff6948c22b644"
 };
+// Importa los íconos que deseas utilizar
+
 const app = createApp(App)
 const pinia = createPinia()
 
@@ -91,4 +96,5 @@ app.directive('custom-size-modify', {
 initializeApp(firebaseConfig)
 app.use(store)
 app.use(pinia)
+app.component("v-icon", OhVueIcon);
 app.mount('#app')
