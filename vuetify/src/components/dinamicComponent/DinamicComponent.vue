@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
+  <div id="dynamicComponent">
     <h1>Componentes dinámicos</h1>
     <v-btn class="bg-blue ma-2" @click="toggle">Cambiar componente</v-btn>
     <component v-bind:is="currentComponent"></component>
+
   </div>
 </template>
 
@@ -12,7 +13,7 @@ import ComponentA from './ComponentA.vue';
 import ComponentB from './ComponentB.vue';
 
 export default {
-  name: 'App',
+  name: 'DynamicComponent',
   components: {
     ComponentA,
     ComponentB,
