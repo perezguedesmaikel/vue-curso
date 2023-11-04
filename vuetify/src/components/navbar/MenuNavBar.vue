@@ -28,5 +28,9 @@ const items = [
   {title: 'Cicle-life', url: '/cicle-life'},
   {title: 'Vertical-Communication', url: '/vertical-communication'},
   {title: 'Directivas personalizadas', url: '/directivas'},
+  {title: 'Consumo de api', url: '/services'},
+  {title: 'Login', url: '/login'},
+  {title: 'Contador Global', url: '/global'},
+
 ];
 </script>

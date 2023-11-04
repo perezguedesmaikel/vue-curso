@@ -1,7 +1,11 @@
 <template>
   <p>Has published books:</p>
-  <span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span>
+  <span>{{ publishedBooksMessage }}</span>
   <v-btn class="ml-2 bg-blue" @click="emptyBooks">{{ author.books.length > 0 ? 'Llenar' : 'Vaciar' }}</v-btn>
+  <v-label v-font-size>Probando directiva!!!</v-label>
+  <v-label v-custom-size='70'>Probando directiva!!!</v-label>
+  <v-label v-custom-size-arg:200px>Probando directiva!!!</v-label>
+  <v-label v-custom-size-modify.sm>Probando directiva!!!</v-label>
   <v-container>{{ JSON.stringify(author.books) }}</v-container>
 </template>
 
@@ -16,6 +20,7 @@ import {reactive, computed, ref} from 'vue'
 //     {title: 'Vue 4 - The Mystery'}
 //   ]
 // })
+console.log('viendo renderizados');
 const author = ref({
   name: 'John Doe',
   books: [
@@ -37,5 +42,9 @@ function emptyBooks() {
   }
 
 }
+
+const publishedBooksMessage = computed(() => {
+  return author.value.books.length > 0 ? 'Yes' : 'No'
+})
 </script>
 

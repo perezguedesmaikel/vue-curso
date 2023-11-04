@@ -12,13 +12,13 @@
             que desees mostrar a tus visitantes. Puedes personalizar el diseño
             y los elementos según tus necesidades.
           </v-card-text>
-          <v-card-actions>
-            <v-btn color="primary" to="/about">
-              Leer más
+          <v-card-actions class="d-flex flex-column">
+            <v-btn color="primary">
+              Estado global del counter Vuex: {{ count }}
             </v-btn>
             <v-spacer></v-spacer>
             <v-btn color="secondary" to="/contact">
-              Contáctanos
+              Estado global del counter Pinia: {{ counter.count }}
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -28,7 +28,14 @@
 </template>
 
 <script setup>
+import {useStore} from "vuex";
+import {computed} from "vue";
+import {useCounterStore} from "@/components/store/piniaStore";
 
+const count = computed(() => store.state.count);
+const counter = useCounterStore()
+
+const store = useStore();
 </script>
 
 <style scoped>

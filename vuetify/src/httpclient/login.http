@@ -1,0 +1,7 @@
+POST https://hfp69ilv.directus.app/auth/login
+Content-Type: application/json
+
+{
+  "email": "testuser@gogodev.net",
+  "password": "12345678"
+}

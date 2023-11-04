@@ -23,9 +23,23 @@ import MyFirstForm from "@/components/forms/MyFirstForm.vue";
 import CicleLife from "@/components/CicleLife/CicleLife.vue";
 import Father from "@/components/comunicationVertical/Father.vue";
 import DirectivasPersonalizadas from "@/components/directivas/DirectivasPersonalizadas.vue";
+import Services from "@/components/services/Services.vue";
+import Login from "@/components/login/Login.vue";
+import {initializeApp} from "firebase/app";
+import store from "@/components/store/store";
+import ContadorGlobal from "@/components/contadorGlobal/ContadorGlobal.vue";
+import {createPinia} from "pinia";
 
-
+const firebaseConfig = {
+    apiKey: "AIzaSyAeD6Pevuygz7QJrLEm_W4EFrhBPcF4rTs",
+    authDomain: "curso-vue-d39ea.firebaseapp.com",
+    projectId: "curso-vue-d39ea",
+    storageBucket: "curso-vue-d39ea.appspot.com",
+    messagingSenderId: "134067368717",
+    appId: "1:134067368717:web:6dd2c74e7ff6948c22b644"
+};
 const app = createApp(App)
+const pinia = createPinia()
 
 registerPlugins(app)
 const routes = [
@@ -39,6 +53,9 @@ const routes = [
     {path: '/cicle-life', component: CicleLife},
     {path: '/vertical-communication', component: Father},
     {path: '/directivas', component: DirectivasPersonalizadas},
+    {path: '/services', component: Services},
+    {path: '/login', component: Login},
+    {path: '/global', component: ContadorGlobal},
 ]
 const router = createRouter({
     history: createWebHashHistory(),
@@ -48,5 +65,28 @@ const router = createRouter({
 // // Make sure to _use_ the router instance to make the
 // // whole app router-aware.
 app.use(router)
+app.directive('font-size', {
+    beforeMount: (el, binding) => {
+        el.style.fontSize = '70px'
+    }
+})
+app.directive('custom-size', {
+    beforeMount: (el, binding) => {
+        el.style.fontSize = binding.value + 'px'
+    }
+})
+app.directive('custom-size-arg', {
+    beforeMount: (el, binding) => {
+        el.style.fontSize = binding.arg
+    }
+})
+app.directive('custom-size-modify', {
+    beforeMount: (el, binding) => {
+        el.style.fontSize = binding.modifiers.sm && '200px'
+    }
+})
 
+initializeApp(firebaseConfig)
+app.use(store)
+app.use(pinia)
 app.mount('#app')
