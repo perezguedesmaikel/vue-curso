@@ -29,6 +29,7 @@ import {initializeApp} from "firebase/app";
 import store from "@/components/store/store";
 import ContadorGlobal from "@/components/contadorGlobal/ContadorGlobal.vue";
 import {createPinia} from "pinia";
+import DinamicComponent from "@/components/dinamicComponent/DinamicComponent.vue";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAeD6Pevuygz7QJrLEm_W4EFrhBPcF4rTs",
@@ -56,6 +57,7 @@ const routes = [
     {path: '/services', component: Services},
     {path: '/login', component: Login},
     {path: '/global', component: ContadorGlobal},
+    {path: '/dynamic', component: DinamicComponent},
 ]
 const router = createRouter({
     history: createWebHashHistory(),

@@ -31,6 +31,7 @@ const items = [
   {title: 'Consumo de api', url: '/services'},
   {title: 'Login', url: '/login'},
   {title: 'Contador Global', url: '/global'},
+  {title: 'Componentes Dinámicos', url: '/dynamic'},
 
 ];
 </script>
