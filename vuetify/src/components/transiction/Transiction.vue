@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import {ref} from "vue";
+import MyGroupTransition from './MyGroupTransition.vue'
 
 const animate = ref(false)
 
@@ -25,6 +26,8 @@ function activeAnimate() {
       </v-label>
     </Transition>
   </div>
+  <v-label class="mt-4">Transición grupal</v-label>
+  <MyGroupTransition/>
 </template>
 
 <style scoped>
