@@ -9,15 +9,18 @@ function activeAnimate() {
 </script>
 
 <template>
+  <v-label>Transición simple1</v-label>
   <div class="position-relative">
     <v-btn class="bg-green" @click="activeAnimate">Animar</v-btn>
     <Transition>
-      <v-label v-if="animate" class="ma-2 position-absolute text-green">Hello world animated este es un texto para una
+      <v-label v-if="animate" class="ma-2 position-absolute text-green-darken-4">Hello world animated este es un texto
+        para una
         fusión!!!
       </v-label>
     </Transition>
     <Transition>
-      <v-label v-if="!animate" class="ma-2 position-absolute text-green">Texto que alterna, waooo esto es una fusión
+      <v-label v-if="!animate" class="ma-2 position-absolute text-green-darken-4">Texto que alterna, waooo esto es una
+        fusión
         simple!!
       </v-label>
     </Transition>
