@@ -28,6 +28,7 @@ function activeAnimate() {
   </div>
   <v-label class="mt-4">Transición grupal</v-label>
   <MyGroupTransition/>
+
 </template>
 
 <style scoped>

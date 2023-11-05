@@ -34,12 +34,12 @@
             </v-list>
             <v-divider></v-divider>
             <v-text-field
-              v-model="newTask"
-              class="mt-4"
-              label="Nueva Tarea"
-              outlined
-              solo-inverted
-              @keyup.enter="addTask"
+                v-model="newTask"
+                class="mt-4"
+                label="Nueva Tarea"
+                outlined
+                solo-inverted
+                @keyup.enter="addTask"
             ></v-text-field>
             <v-container class="d-flex justify-end pt-0">
               <v-btn class="bg-blue" @click="addTask">Agregar</v-btn>
@@ -47,33 +47,46 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-container class="d-flex flex-column">
+        <v-label class="mt-10">Aquí vamos a poner ejemplos de íconos...</v-label>
+        <v-container>
+          <v-my-icon animation="pulse" class="mt-10 classPointer" fill="blue" name="ci-color-ada" scale="4"></v-my-icon>
+          <v-my-icon animation="ring" fill="red" name="gi-ancient-sword" scale="4"/>
+          <v-my-icon animation="wrench" name="pi-castform-sunny" scale="3.5"/>
+        </v-container>
+      </v-container>
     </v-container>
   </v-app>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      tasks: [],
-      newTask: "",
-    };
-  },
-  methods: {
-    addTask() {
-      if (this.newTask.trim() !== "") {
-        this.tasks.push({title: this.newTask, completed: false});
-        this.newTask = "";
-      }
-    },
-    toggleTask(index) {
-      this.tasks[index].completed = !this.tasks[index].completed;
-    },
-    removeTask(index) {
-      this.tasks.splice(index, 1);
-    },
-  },
-};
+<script setup>
+
+import {reactive, ref} from "vue";
+import {addIcons} from "oh-vue-icons";
+import {GiAncientSword, PiCastformSunny} from "oh-vue-icons/icons";
+
+addIcons(GiAncientSword, PiCastformSunny);
+
+
+const tasks = reactive([])
+let newTask = ref("")
+
+
+function addTask() {
+  if (newTask.value.trim() !== "") {
+    tasks.push({title: newTask.value, completed: false});
+    newTask.value = "";
+  }
+}
+
+function toggleTask(index) {
+  tasks[index].completed = !tasks[index].completed;
+}
+
+function removeTask(index) {
+  tasks.splice(index, 1);
+}
+
 </script>
 
 <style scoped>
@@ -99,6 +112,10 @@ export default {
 
 .v-enter-to, .v-leave-from {
   opacity: 0.6;
+}
+
+.classPointer {
+  cursor: pointer;
 }
 </style>
 
