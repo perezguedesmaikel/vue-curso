@@ -33,6 +33,7 @@ import DinamicComponent from "@/components/dinamicComponent/DinamicComponent.vue
 import {OhVueIcon, addIcons} from "oh-vue-icons";
 import {FaFlag, RiZhihuFill, CiColorAda} from "oh-vue-icons/icons";
 import Transiction from "@/components/transiction/Transiction.vue";
+import PersistencePinia from "@/components/Persistence/PersistencePinia.vue";
 
 addIcons(FaFlag, RiZhihuFill);
 const firebaseConfig = {
@@ -65,6 +66,7 @@ const routes = [
     {path: '/global', component: ContadorGlobal},
     {path: '/dynamic', component: DinamicComponent},
     {path: '/transaction', component: Transiction},
+    {path: '/pinia', component: PersistencePinia},
 ]
 const router = createRouter({
     history: createWebHashHistory(),
