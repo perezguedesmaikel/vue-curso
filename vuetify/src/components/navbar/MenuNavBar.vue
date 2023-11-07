@@ -34,6 +34,8 @@ const items = [
   {title: 'Componentes Dinámicos', url: '/dynamic'},
   {title: 'Transiciones de componentes', url: '/transaction'},
   {title: 'Persistencia con Pinia', url: '/pinia'},
+  {title: 'Juego de Dominó', url: '/domino'},
+  {title: 'Define expose and emit again', url: '/expose'},
 
 ];
 </script>

@@ -14,9 +14,12 @@
     "firebase": "^10.5.2",
     "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.1.7",
+    "pinia-plugin-persist": "^1.0.0",
     "roboto-fontface": "*",
     "vue": "^3.2.0",
+    "vue-i18n": "^9.6.5",
     "vue-router": "^4.2.5",
+    "vue3-lazyload": "^0.3.8",
     "vuetify": "^3.0.0",
     "vuex": "^4.1.0"
   },

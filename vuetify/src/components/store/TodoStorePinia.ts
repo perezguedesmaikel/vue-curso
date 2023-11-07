@@ -30,5 +30,7 @@ export const useTodoStore = defineStore('todo', {
         removeTask(index: number) {
             this.tasks.splice(index, 1);
         }
+    }, persist: {
+        enabled: true
     }
 })
