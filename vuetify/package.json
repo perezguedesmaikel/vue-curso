@@ -19,6 +19,7 @@
     "vue": "^3.2.0",
     "vue-i18n": "^9.6.5",
     "vue-router": "^4.2.5",
+    "vue-signals": "^0.3.1",
     "vue3-lazyload": "^0.3.8",
     "vuetify": "^3.0.0",
     "vuex": "^4.1.0"

@@ -41,6 +41,7 @@ import ExposeParent from "@/components/expose/ExposeParent.vue";
 import VueLazyLoad from 'vue3-lazyload'
 import Translate from "@/components/Translate/Translate.vue";
 import i18n from "@/components/TranslateConfig/TranslateConfig";
+import VueSignal from "@/components/VueSignal/VueSignal.vue";
 
 addIcons(FaFlag, RiZhihuFill);
 const firebaseConfig = {
@@ -78,6 +79,7 @@ const routes = [
   {path: '/domino', component: DominoGame},
   {path: '/expose', component: ExposeParent},
   {path: '/translate', component: Translate},
+  {path: '/signal', component: VueSignal},
 ]
 const router = createRouter({
   history: createWebHashHistory(),

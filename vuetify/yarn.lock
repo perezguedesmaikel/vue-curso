@@ -2228,6 +2228,11 @@ vue-router@^4.2.5:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
+vue-signals@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/vue-signals/-/vue-signals-0.3.1.tgz#05be046d1d4a1827db2af20d3738411fa45b0db2"
+  integrity sha512-JtBaSb2cvp+Q711QINZeYbwarO9biLYIjbRSGpZJ5Qc9YxXvk1+CGMGAx4caIDuRkJUcBY4ArE6ikZI1Tfr1gQ==
+
 vue-template-compiler@^2.7.14:
   version "2.7.15"
   resolved "https://registry.npmjs.org/vue-template-compiler/-/vue-template-compiler-2.7.15.tgz"

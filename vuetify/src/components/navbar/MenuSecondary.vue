@@ -21,6 +21,7 @@
 <script setup>
 const items = [
   {title: 'Traducciones', url: '/translate'},
+  {title: 'Vue Signal Plugin', url: '/signal'},
 
 
 ];
